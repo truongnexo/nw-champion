@@ -11,6 +11,11 @@ TextureImporter:
     21300012: Sword_Two_Particle_7
     21300014: Sword_Two_Particle_8
     21300016: Sword_Two_Particle_9
+    21300018: Sword_Two_Particle_0
+    21300020: Sword_Two_Particle_10
+    21300022: Sword_Two_Particle_11
+    21300024: Sword_Two_Particle_12
+    21300026: Sword_Two_Particle_13
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -93,11 +98,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sword_Two_Particle_1
+      name: Sword_Two_Particle_0
       rect:
         serializedVersion: 2
-        x: 768
-        y: 1027
+        x: 512
+        y: 1024
         width: 256
         height: 256
       alignment: 0
@@ -107,7 +112,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ddbb51170938ee3459c1ad47a8881169
+      spriteID: 5c631c4577fdace4d9cf0c4001ee1307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_Two_Particle_1
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bd8ba9ab415a5540a80c30ea81dc0f6
       vertices: []
       indices: 
       edges: []
@@ -127,7 +152,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1301fc69e3ad4f1448ff2eb461179c5f
+      spriteID: 3d2eb39edf20f93479ee1f36cc669dad
       vertices: []
       indices: 
       edges: []
@@ -147,7 +172,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60e917fce8f922249966d1c030d4a273
+      spriteID: e4f7c2d1f1a3bb1469cd100536e71a5b
       vertices: []
       indices: 
       edges: []
@@ -167,7 +192,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 809938bd79113b54aba2dad076094f46
+      spriteID: aa0023d9f170b63459981cbd723f3e71
       vertices: []
       indices: 
       edges: []
@@ -187,7 +212,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 167954e44e4283845a2f92909188d5ae
+      spriteID: a069066218a76d54f90c66ab3d72133f
       vertices: []
       indices: 
       edges: []
@@ -207,7 +232,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9d2de389f85cd244aa528bef54e670b
+      spriteID: 19c4fefd8e34fa6448e0ac3b3f0830b8
       vertices: []
       indices: 
       edges: []
@@ -227,7 +252,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9036f04b31bf19a4c80b33deb53dbcad
+      spriteID: ed44298364d005e47bfaf3e0e61cb445
       vertices: []
       indices: 
       edges: []
@@ -247,7 +272,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9860654cdff2bcb4a99b72c49cbf9545
+      spriteID: 0d6760baa35ab9b498c0a2aa3e30192d
       vertices: []
       indices: 
       edges: []
@@ -267,7 +292,87 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66753cbeb1c709b4eaab7c8edfffc706
+      spriteID: ebb72e7b8100d1547b78017cb28037c8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_Two_Particle_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d64d0946ca22e1846b7e3a3b3c3ad0bb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_Two_Particle_11
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d8ad079855fc4245a25a64c610ab4be
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_Two_Particle_12
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f797f63786c46f47b9c84a4d1de87cf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_Two_Particle_13
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b6461b13f770c54ab051c347ed1b412
       vertices: []
       indices: 
       edges: []

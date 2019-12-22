@@ -5,10 +5,8 @@ using UnityEngine;
 public class MrValentine : Enemy
 {
     private Rigidbody2D r2D;
-    private Animator anim;
-    /// <summary>
-    /// 
-    /// </summary>
+    private Animator anim; 
+
     public void Start()
     {
         // khoi tao doi tuong
@@ -23,21 +21,17 @@ public class MrValentine : Enemy
     void Movement()
     {
         Vector3 temp = transform.localScale;
-        speed = 0;
-        //anim.SetBool("Hit", false);
-        anim.SetBool("Walk", false);
-        // lay khoang cach tu skeleton toi player
+        speed = 0; 
+        anim.SetBool("Walk", false); 
         distance = Vector2.Distance(transform.position, player.position);
-
         // cho quai thuc day khi player nam trong khoang distanceMIN va ngu lai khi player ra khoi
         if (player.transform.position.x > this.transform.position.x && distance < distanceMIN)
         {
-            speed = 0.4f;
+            speed = 10f;
             anim.SetBool("Walk", true);
-            temp.x = 3f;
-            transform.localScale = temp;
-            // neu player den qua gan thi Attack
-            if (distance <= 1.2)
+            temp.x = 90f;
+            transform.localScale = temp; 
+            if (distance <= 100)
             {
                 anim.SetBool("Attack", true);
                 speed = 0;
@@ -45,19 +39,19 @@ public class MrValentine : Enemy
             else
             {
                 anim.SetBool("Attack", false);
-                speed = 0.2f;
+                speed = 1.2f;
             }
         }
         else
 
         if (player.transform.position.x < this.transform.position.x && distance < distanceMIN)
         {
-            speed = 0.4f;
+            speed = 10f;
             r2D.AddForce(Vector2.left * speed);
             anim.SetBool("Walk", true);
-            temp.x = -3f;
+            temp.x = -90f;
             transform.localScale = temp;
-            if (distance < 1.2)
+            if (distance <= 100)
             {
                 anim.SetBool("Attack", true);
                 speed = 0;
@@ -65,10 +59,10 @@ public class MrValentine : Enemy
             else
             {
                 anim.SetBool("Attack", false);
-                speed = 0.2f;
+                speed = -1.2f;
             }
         }
-        colliderPlayer = Physics2D.Linecast(pointA.position, pointB.position, 1 << 8); // tra ve gia tri true khi pointB ra khoi ground
+        colliderPlayer = Physics2D.Linecast(pointA.position, pointB.position, 1 << 8); 
         Debug.DrawLine(pointA.position, pointB.position, Color.green);
         if (!colliderPlayer)
         {
@@ -88,16 +82,14 @@ public class MrValentine : Enemy
         Check();
     }
 
-    //kiem tra xem player co chem chung khong
+    //kiem tra xem player co chem trung khong
     void Check_Sword_Arc()
     {
-        float checkSword = Vector2.Distance(Sword_Arc.position, transform.position); // khoang cach giua vet chem voi enemy
-        //Debug.Log("distanceSword" + checkSword);
-        if (checkSword < 1 && Input.GetMouseButtonDown(0))
+        float checkSword = Vector2.Distance(Sword_Arc.position, transform.position); 
+        if (checkSword < 150 && Input.GetKeyDown(KeyCode.Space))
         {
             health -= 10;
-            //anim.SetBool("Hit", true);
-            anim.SetTrigger("Hit");
+            //anim.SetTrigger("Hit");
             r2D.AddForce(Vector2.right * speed * 0);
         }
     }

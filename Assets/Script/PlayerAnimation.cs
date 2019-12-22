@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class PlayerAnimation : MonoBehaviour
 {
-    public Animator _anim; 
+    public Animator _anim;
+    private Animator _swordAnimation;
     void Start()
     {
-        _anim = GetComponentInChildren<Animator>(); 
+        _anim = GetComponentInChildren<Animator>();
+        _swordAnimation = transform.GetChild(1).GetComponent<Animator>();
     }
 
     public void Move (float move)
@@ -18,18 +20,12 @@ public class PlayerAnimation : MonoBehaviour
     public void Jump(bool jump)
     {
         _anim.SetBool("Jumping", jump);
-    }
-
-    IEnumerator AnimateJump() 
-    {
-        _anim.Play("Up" );
-        yield return new WaitForSeconds(.5f);
-        _anim.Play("Down");
-    }
+    } 
 
     public void Attack()
     {
-        _anim.SetTrigger("Attack"); 
+        _anim.SetTrigger("Attack");
+        _swordAnimation.SetTrigger("SwordAnimation");
     }
 
     public void Hit()

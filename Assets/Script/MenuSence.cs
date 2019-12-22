@@ -6,14 +6,24 @@ using UnityEngine.SceneManagement;
 public class MenuSence : MonoBehaviour
 {
     // Start is called before the first frame update
-    void Start()
+    public void StartGame()
     {
-        
+        Application.LoadLevel("InGame");
     }
 
-    public void ChangeSence()
+    public void QuitGame()
     {
-        SceneManager.LoadScene(1);
+        Application.Quit();
+    }
+
+    public void Menu()
+    {
+        Application.LoadLevel("MainMenu");
+    }
+
+    public void Guide()
+    {
+        Application.LoadLevel("Guide");
     }
 
     // Update is called once per frame
