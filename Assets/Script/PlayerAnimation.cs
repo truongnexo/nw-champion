@@ -4,28 +4,32 @@ using UnityEngine;
 
 public class PlayerAnimation : MonoBehaviour
 {
-    public Animator _anim;
-    private Animator _swordAnimation;
+    public Animator _anim; 
     void Start()
     {
-        _anim = GetComponentInChildren<Animator>();
-        _swordAnimation = transform.GetChild(1).GetComponent<Animator>();
+        _anim = GetComponentInChildren<Animator>(); 
     }
 
     public void Move (float move)
     {
-        _anim.SetFloat("Walk", Mathf.Abs(move));
+        _anim.SetFloat("Move", Mathf.Abs(move));
     }
 
     public void Jump(bool jump)
     {
-        _anim.SetBool("Jump", jump);
+        _anim.SetBool("Jumping", jump);
+    }
+
+    IEnumerator AnimateJump() 
+    {
+        _anim.Play("Up" );
+        yield return new WaitForSeconds(.5f);
+        _anim.Play("Down");
     }
 
     public void Attack()
     {
-        _anim.SetTrigger("Attack");
-        _swordAnimation.SetTrigger("SwordAnimation");
+        _anim.SetTrigger("Attack"); 
     }
 
     public void Hit()

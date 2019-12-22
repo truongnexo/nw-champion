@@ -12,17 +12,15 @@ public class PlayerMove : MonoBehaviour
     private float _speed;
     [SerializeField]
     public float _health;
-    private bool _grounded = false;
+    private bool _grounded;
     private PlayerAnimation _playerAnim;
-    private SpriteRenderer _playerSprite;
-    private SpriteRenderer _swordArcSprite;
+    private SpriteRenderer _playerSprite; 
 
     void Start()
     {
         _rigid = GetComponent<Rigidbody2D>();
         _playerAnim = GetComponent<PlayerAnimation>();
-        _playerSprite = GetComponentInChildren<SpriteRenderer>();
-        _swordArcSprite = transform.GetChild(1).GetComponent<SpriteRenderer>();
+        _playerSprite = GetComponentInChildren<SpriteRenderer>(); 
     }
 
     void Update()
@@ -32,18 +30,24 @@ public class PlayerMove : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             _playerAnim.Attack();
-
         }
+        
+    }
+
+    public void Jumping(float force)
+    {
+
     }
 
     void Movement()
     {
-        float move = Input.GetAxis("Horizontal");
+        float move = Input.GetAxisRaw("Horizontal");
+        float forceY = 0f;
         if(move != 0)
         {
             System.Console.WriteLine();
         }
-        _grounded = IsGrounded();
+        //_grounded = IsGrounded();
         if (move > 0)
         {
             Flip(true);
@@ -53,7 +57,7 @@ public class PlayerMove : MonoBehaviour
             Flip(false);
         }
 
-        if (Input.GetKeyDown(KeyCode.UpArrow) && IsGrounded() == true)
+        if (Input.GetKeyDown(KeyCode.UpArrow) && _grounded == true)
         {
             _rigid.velocity = new Vector2(_rigid.velocity.x, _jumpForce);
             StartCoroutine(ResetJumpRoutine());
@@ -62,7 +66,21 @@ public class PlayerMove : MonoBehaviour
 
         _rigid.velocity = new Vector2(move * _speed, _rigid.velocity.y);
         _playerAnim.Move(move);
+
     }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Ground")
+        {
+            if (_resetJump == false)
+            {
+                _playerAnim.Jump(false);
+                _grounded = true;
+            } 
+        }
+    }
+
 
     bool IsGrounded()
     {
@@ -103,18 +121,18 @@ public class PlayerMove : MonoBehaviour
             _playerSprite.flipX = false;
             //_swordArcSprite.flipX = false;
             //_swordArcSprite.flipY = false;
-            Vector3 newPos = _swordArcSprite.transform.localPosition;
-            newPos.x = 1.01f;
-            _swordArcSprite.transform.localPosition = newPos;
+            //Vector3 newPos = _swordArcSprite.transform.localPosition;
+            //newPos.x = 0.4f;
+            //_swordArcSprite.transform.localPosition = newPos;
         }
         else if (faceRight == false)
         {
             _playerSprite.flipX = true;
             //_swordArcSprite.flipX = true;
             //_swordArcSprite.flipY = true;
-            Vector3 newPos = _swordArcSprite.transform.localPosition;
-            newPos.x = -1.01f;
-            _swordArcSprite.transform.localPosition = newPos;
+            //Vector3 newPos = _swordArcSprite.transform.localPosition;
+            //newPos.x = -1.01f;
+            //_swordArcSprite.transform.localPosition = newPos;
         }
     }
     IEnumerator ResetJumpRoutine()

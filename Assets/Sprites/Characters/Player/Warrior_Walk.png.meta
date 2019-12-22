@@ -104,10 +104,10 @@ TextureImporter:
       name: Warrior_Walk_0
       rect:
         serializedVersion: 2
-        x: 96
-        y: 1076
-        width: 93
-        height: 112
+        x: 0
+        y: 1024
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,7 +115,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea066e2982a045540b681d0399bff484
+      spriteID: a497544d9b7496a429d0c1d401dbdb3a
       vertices: []
       indices: 
       edges: []
@@ -124,10 +124,10 @@ TextureImporter:
       name: Warrior_Walk_1
       rect:
         serializedVersion: 2
-        x: 352
-        y: 1076
-        width: 93
-        height: 112
+        x: 256
+        y: 1024
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -135,7 +135,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6164912647a768e43a0101ab5cae0e0c
+      spriteID: 040c4b936d7a41c4cb06222a04bd7d32
       vertices: []
       indices: 
       edges: []
@@ -144,10 +144,10 @@ TextureImporter:
       name: Warrior_Walk_2
       rect:
         serializedVersion: 2
-        x: 607
-        y: 1079
-        width: 93
-        height: 109
+        x: 512
+        y: 1024
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,7 +155,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 321a8363999961e41966ec59027ea20a
+      spriteID: 8b332c22243deda4cb8fd411e21a96af
       vertices: []
       indices: 
       edges: []
@@ -164,10 +164,10 @@ TextureImporter:
       name: Warrior_Walk_3
       rect:
         serializedVersion: 2
-        x: 863
-        y: 1079
-        width: 93
-        height: 108
+        x: 768
+        y: 1024
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,7 +175,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ae9d77c4e8e80b498dd12831e13ba19
+      spriteID: a3ce8e148577c354db3b7d16c86f442a
       vertices: []
       indices: 
       edges: []
@@ -184,10 +184,10 @@ TextureImporter:
       name: Warrior_Walk_4
       rect:
         serializedVersion: 2
-        x: 92
-        y: 820
-        width: 96
-        height: 110
+        x: 0
+        y: 768
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,7 +195,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e09f99f1416992469f330a309560a18
+      spriteID: 6d34d13d1bb11eb4e8094d8f7c383d55
       vertices: []
       indices: 
       edges: []
@@ -204,10 +204,10 @@ TextureImporter:
       name: Warrior_Walk_5
       rect:
         serializedVersion: 2
-        x: 347
-        y: 822
-        width: 98
-        height: 107
+        x: 256
+        y: 768
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,7 +215,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1200e062505c7494c92f161c62c9ee63
+      spriteID: 2c3c4ad8728cde849aa121d1be1778bf
       vertices: []
       indices: 
       edges: []
@@ -224,10 +224,10 @@ TextureImporter:
       name: Warrior_Walk_6
       rect:
         serializedVersion: 2
-        x: 604
-        y: 820
-        width: 97
-        height: 112
+        x: 512
+        y: 768
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -235,7 +235,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 705a74653d5378e4e9086cfb8afc0178
+      spriteID: afa87844079dee448ad61b7e73bb0f85
       vertices: []
       indices: 
       edges: []
@@ -244,10 +244,10 @@ TextureImporter:
       name: Warrior_Walk_7
       rect:
         serializedVersion: 2
-        x: 863
-        y: 820
-        width: 94
-        height: 110
+        x: 768
+        y: 768
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -255,7 +255,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3876d2b02bceebc48b711ae927ea6ec1
+      spriteID: 681d7f86470ed7545b72ad89878d8e63
       vertices: []
       indices: 
       edges: []
@@ -264,10 +264,10 @@ TextureImporter:
       name: Warrior_Walk_8
       rect:
         serializedVersion: 2
-        x: 95
-        y: 564
-        width: 94
-        height: 111
+        x: 0
+        y: 512
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -275,7 +275,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 926d25e295e7f044998d61cdcc995016
+      spriteID: 5ae687a07ebfc51449146345c8dab8bf
       vertices: []
       indices: 
       edges: []
@@ -284,10 +284,10 @@ TextureImporter:
       name: Warrior_Walk_9
       rect:
         serializedVersion: 2
-        x: 348
-        y: 564
-        width: 96
-        height: 112
+        x: 256
+        y: 512
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -295,7 +295,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 197115458ca30844c8dd30b8a37d2739
+      spriteID: 2630f31a44e5cc444bbea970bb7dd4bc
       vertices: []
       indices: 
       edges: []
@@ -304,10 +304,10 @@ TextureImporter:
       name: Warrior_Walk_10
       rect:
         serializedVersion: 2
-        x: 606
-        y: 564
-        width: 94
-        height: 112
+        x: 512
+        y: 512
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -315,7 +315,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29101ec09a5e01245af344c78012e950
+      spriteID: 108f467344556414d98b67dda4960de4
       vertices: []
       indices: 
       edges: []
@@ -324,10 +324,10 @@ TextureImporter:
       name: Warrior_Walk_11
       rect:
         serializedVersion: 2
-        x: 860
-        y: 565
-        width: 95
-        height: 109
+        x: 768
+        y: 512
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -335,7 +335,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd7896d4739d89f4eb92aeb882dc4bd8
+      spriteID: 21edb73f0344dd34a960e8652b839ca0
       vertices: []
       indices: 
       edges: []
@@ -344,10 +344,10 @@ TextureImporter:
       name: Warrior_Walk_12
       rect:
         serializedVersion: 2
-        x: 94
-        y: 308
-        width: 93
-        height: 109
+        x: 0
+        y: 256
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -355,7 +355,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ed8d7da81e192c4c8cbd5e0481a2644
+      spriteID: 12365a6ec9ec52e4bb68028c52136a55
       vertices: []
       indices: 
       edges: []
@@ -364,10 +364,10 @@ TextureImporter:
       name: Warrior_Walk_13
       rect:
         serializedVersion: 2
-        x: 346
-        y: 308
-        width: 97
-        height: 108
+        x: 256
+        y: 256
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -375,7 +375,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2537ff3e921af8945a471516805b0e2e
+      spriteID: f3a973d96a9fcda42bcd2082120e861b
       vertices: []
       indices: 
       edges: []
@@ -384,10 +384,10 @@ TextureImporter:
       name: Warrior_Walk_14
       rect:
         serializedVersion: 2
-        x: 604
-        y: 309
-        width: 90
-        height: 108
+        x: 512
+        y: 256
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -395,7 +395,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae021dbbf23a4e746ade4ef85e9f4ce1
+      spriteID: b220a5637cf37f740bcc214cb050431c
       vertices: []
       indices: 
       edges: []
@@ -404,10 +404,10 @@ TextureImporter:
       name: Warrior_Walk_15
       rect:
         serializedVersion: 2
-        x: 863
-        y: 309
-        width: 84
-        height: 113
+        x: 768
+        y: 256
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -415,7 +415,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7fd1b3288a2cbe6438c3e85355de0c4e
+      spriteID: 83e27faeb92602843bc06a544a1cf7ff
       vertices: []
       indices: 
       edges: []
@@ -424,10 +424,10 @@ TextureImporter:
       name: Warrior_Walk_16
       rect:
         serializedVersion: 2
-        x: 96
-        y: 53
-        width: 84
-        height: 115
+        x: 0
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -435,7 +435,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8dda48834e667914e8e71fe13b7c72b4
+      spriteID: 26859a81f150d944698db3a444f539fb
       vertices: []
       indices: 
       edges: []
