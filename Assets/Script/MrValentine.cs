@@ -27,7 +27,7 @@ public class MrValentine : Enemy
         // cho quai thuc day khi player nam trong khoang distanceMIN va ngu lai khi player ra khoi
         if (player.transform.position.x > this.transform.position.x && distance < distanceMIN)
         {
-            speed = 10f;
+            speed = 1f;
             anim.SetBool("Walk", true);
             temp.x = 90f;
             transform.localScale = temp; 
@@ -46,7 +46,7 @@ public class MrValentine : Enemy
 
         if (player.transform.position.x < this.transform.position.x && distance < distanceMIN)
         {
-            speed = 10f;
+            speed = 1f;
             r2D.AddForce(Vector2.left * speed);
             anim.SetBool("Walk", true);
             temp.x = -90f;
@@ -59,7 +59,7 @@ public class MrValentine : Enemy
             else
             {
                 anim.SetBool("Attack", false);
-                speed = -1.2f;
+                speed = 1.2f;
             }
         }
         colliderPlayer = Physics2D.Linecast(pointA.position, pointB.position, 1 << 8); 
@@ -70,7 +70,6 @@ public class MrValentine : Enemy
             anim.SetBool("Walk", false);
         }
 
-
         if (health <= 0)
         {
             anim.SetTrigger("Death");
@@ -79,7 +78,6 @@ public class MrValentine : Enemy
 
         r2D.velocity = new Vector2(transform.localScale.x, 0) * speed;
         Check_Sword_Arc();
-        Check();
     }
 
     //kiem tra xem player co chem trung khong

@@ -23,11 +23,11 @@ public class DrBlackFriday : Enemy
         // cho quai thuc day khi player nam trong khoang distanceMIN va ngu lai khi player ra khoi
         if (player.transform.position.x > this.transform.position.x && distance < distanceMIN)
         {
-            speed = 10f;
+            speed = 1f;
             anim.SetBool("Walk", true);
-            temp.x = 3f;
+            temp.x = 155f;
             transform.localScale = temp; 
-            if (distance <= 100)
+            if (distance <= 120)
             {
                 anim.SetBool("Attack", true);
                 speed = 0;
@@ -35,17 +35,17 @@ public class DrBlackFriday : Enemy
             else
             {
                 anim.SetBool("Attack", false);
-                speed = 1.2f;
+                speed = 1f;
             }
         }
         else
 
         if (player.transform.position.x < this.transform.position.x && distance < distanceMIN)
         {
-            speed = 10f;
+            speed = 1f;
             r2D.AddForce(Vector2.left * speed);
             anim.SetBool("Walk", true);
-            temp.x = -3f;
+            temp.x = -155f;
             transform.localScale = temp;
             if (distance < 100)
             {
@@ -56,7 +56,7 @@ public class DrBlackFriday : Enemy
             else
             {
                 anim.SetBool("Attack", false);
-                speed = -1.2f;
+                speed = 1f;
 
             }
         }
