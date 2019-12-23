@@ -38,11 +38,7 @@ public class PlayerMove : MonoBehaviour
 
     void Movement()
     {
-        float move = Input.GetAxisRaw("Horizontal"); 
-        if(move != 0)
-        {
-            System.Console.WriteLine();
-        } 
+        float move = Input.GetAxisRaw("Horizontal"); // mũi tên hoặc A - D ( -1 ; 1) không ấn thì 0 
         if (move > 0)
         {
             Flip(true);
@@ -88,9 +84,10 @@ public class PlayerMove : MonoBehaviour
             _health -= 50;
             if (_health <= 0)
             {
-                _playerAnim.Death(true);
-                Destroy(this.gameObject);
-                Application.LoadLevel("Lose");
+                StartCoroutine(Death());
+                //_playerAnim.Death(true);
+                //Destroy(this.gameObject);
+                //Application.LoadLevel("Lose");
             }
         }
     }
@@ -121,5 +118,11 @@ public class PlayerMove : MonoBehaviour
         _resetJump = true;
         yield return new WaitForSeconds(0.6f);
         _resetJump = false;
+    }
+    IEnumerator Death()
+    {
+        _playerAnim.Death(true);
+        yield return new WaitForSeconds(0.6f);
+        Application.LoadLevel("Lose");
     }
 }

@@ -28,9 +28,9 @@ public class MsAllSunday : Enemy
         // cho quai thuc day khi player nam trong khoang distanceMIN va ngu lai khi player ra khoi
         if (player.transform.position.x > this.transform.position.x && distance < distanceMIN)
         {
-            speed = 100f;
+            speed = 2.4f;
             anim.SetBool("Walk", true);
-            temp.x = 48f;
+            temp.x = 90f;
             transform.localScale = temp; 
             if (distance <= 100)
             {
@@ -45,10 +45,10 @@ public class MsAllSunday : Enemy
         }
         else if (player.transform.position.x < this.transform.position.x && distance < distanceMIN)
         {
-            speed = 100f;
+            speed = 2.4f;
             r2D.AddForce(Vector2.left * speed);
             anim.SetBool("Walk", true);
-            temp.x = -48f;
+            temp.x = -90f;
             transform.localScale = temp;
             if (distance <= 100)
             {
