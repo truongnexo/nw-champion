@@ -63,7 +63,7 @@ public class MsAllSunday : Enemy
 
             }
         }
-        colliderPlayer = Physics2D.Linecast(pointA.position, pointB.position, 2 << 8);
+        colliderPlayer = Physics2D.Linecast(pointA.position, pointB.position, 1 << 8);
         Debug.DrawLine(pointA.position, pointB.position, Color.green);
         if (!colliderPlayer)
         {
