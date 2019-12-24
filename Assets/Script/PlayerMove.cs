@@ -16,6 +16,11 @@ public class PlayerMove : MonoBehaviour
     private PlayerAnimation _playerAnim;
     private SpriteRenderer _playerSprite;
     private SpriteRenderer _swordArcSprite;
+    private GameObject hp1;
+    private GameObject hp2;
+    private GameObject hp3;
+    private GameObject hp4;
+    private GameObject hp5;
 
     void Start()
     {
@@ -84,10 +89,7 @@ public class PlayerMove : MonoBehaviour
             _health -= 50;
             if (_health <= 0)
             {
-                StartCoroutine(Death());
-                //_playerAnim.Death(true);
-                //Destroy(this.gameObject);
-                //Application.LoadLevel("Lose");
+                StartCoroutine(Death()); 
             }
         }
     }
@@ -122,7 +124,7 @@ public class PlayerMove : MonoBehaviour
     IEnumerator Death()
     {
         _playerAnim.Death(true);
-        yield return new WaitForSeconds(0.6f);
+        yield return new WaitForSeconds(1.5f);
         Application.LoadLevel("Lose");
     }
 }

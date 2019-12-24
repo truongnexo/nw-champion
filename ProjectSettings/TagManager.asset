@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Ground
   - Enemy
+  - hp1
+  - hp2
+  - hp3
+  - hp4
+  - hp5
   layers:
   - Default
   - TransparentFX

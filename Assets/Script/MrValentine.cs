@@ -39,7 +39,7 @@ public class MrValentine : Enemy
             else
             {
                 anim.SetBool("Attack", false);
-                speed = 1.2f;
+                speed = 1f;
             }
         }
         else
@@ -59,7 +59,7 @@ public class MrValentine : Enemy
             else
             {
                 anim.SetBool("Attack", false);
-                speed = 1.2f;
+                speed = 1f;
             }
         }
         colliderPlayer = Physics2D.Linecast(pointA.position, pointB.position, 1 << 8); 

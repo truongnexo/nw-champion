@@ -8,9 +8,7 @@ public abstract class Enemy : MonoBehaviour
     [SerializeField]
     protected int health;
     [SerializeField]
-    protected float speed;
-    [SerializeField]
-    protected int gems;
+    protected float speed; 
     [SerializeField]
     public Transform player; // lay vi tri cua player
     [SerializeField]
