@@ -28,7 +28,7 @@ public class MsAllSunday : Enemy
         // cho quai thuc day khi player nam trong khoang distanceMIN va ngu lai khi player ra khoi
         if (player.transform.position.x > this.transform.position.x && distance < distanceMIN)
         {
-            speed = 2.4f;
+            speed = 1f;
             anim.SetBool("Walk", true);
             temp.x = 90f;
             transform.localScale = temp; 
@@ -40,12 +40,12 @@ public class MsAllSunday : Enemy
             else
             {
                 anim.SetBool("Attack", false);
-                speed = 1.2f;
+                speed = 1f;
             }
         }
         else if (player.transform.position.x < this.transform.position.x && distance < distanceMIN)
         {
-            speed = 2.4f;
+            speed = 1f;
             r2D.AddForce(Vector2.left * speed);
             anim.SetBool("Walk", true);
             temp.x = -90f;
@@ -59,11 +59,11 @@ public class MsAllSunday : Enemy
             else
             {
                 anim.SetBool("Attack", false);
-                speed = 1.2f;
+                speed = 1f;
 
             }
         }
-        colliderPlayer = Physics2D.Linecast(pointA.position, pointB.position, 1 << 8);
+        colliderPlayer = Physics2D.Linecast(pointA.position, pointB.position, 2 << 8);
         Debug.DrawLine(pointA.position, pointB.position, Color.green);
         if (!colliderPlayer)
         {
