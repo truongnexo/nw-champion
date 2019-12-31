@@ -1090,7 +1090,7 @@ MonoBehaviour:
   speed: 0
   player: {fileID: 1428754273}
   Sword_Arc: {fileID: 1079257575}
-  colliderPlayer: 1
+  colliderPlayer: 0
   pointA: {fileID: 575059306}
   pointB: {fileID: 1136095442}
   distance: 0
@@ -1375,7 +1375,7 @@ MonoBehaviour:
   speed: 0
   player: {fileID: 1428754273}
   Sword_Arc: {fileID: 1079257575}
-  colliderPlayer: 1
+  colliderPlayer: 0
   pointA: {fileID: 707126906}
   pointB: {fileID: 501501427}
   distance: 0
@@ -1784,7 +1784,7 @@ MonoBehaviour:
   speed: 0
   player: {fileID: 1428754273}
   Sword_Arc: {fileID: 1079257575}
-  colliderPlayer: 1
+  colliderPlayer: 0
   pointA: {fileID: 840193764}
   pointB: {fileID: 296922566}
   distance: 0
@@ -2176,7 +2176,7 @@ MonoBehaviour:
   speed: 0
   player: {fileID: 1428754273}
   Sword_Arc: {fileID: 1079257575}
-  colliderPlayer: 1
+  colliderPlayer: 0
   pointA: {fileID: 936084751}
   pointB: {fileID: 1115526612}
   distance: 0
@@ -2969,7 +2969,7 @@ MonoBehaviour:
   speed: 0
   player: {fileID: 1428754273}
   Sword_Arc: {fileID: 1079257575}
-  colliderPlayer: 1
+  colliderPlayer: 0
   pointA: {fileID: 1143158819}
   pointB: {fileID: 555674836}
   distance: 0
@@ -3281,7 +3281,7 @@ MonoBehaviour:
   speed: 0
   player: {fileID: 1428754273}
   Sword_Arc: {fileID: 1079257575}
-  colliderPlayer: 1
+  colliderPlayer: 0
   pointA: {fileID: 1353797358}
   pointB: {fileID: 1286131436}
   distance: 0
@@ -3453,7 +3453,7 @@ MonoBehaviour:
   speed: 0
   player: {fileID: 1428754273}
   Sword_Arc: {fileID: 1079257575}
-  colliderPlayer: 1
+  colliderPlayer: 0
   pointA: {fileID: 1368811160}
   pointB: {fileID: 428939780}
   distance: 0
@@ -3977,7 +3977,7 @@ MonoBehaviour:
   speed: 0
   player: {fileID: 1428754273}
   Sword_Arc: {fileID: 1079257575}
-  colliderPlayer: 1
+  colliderPlayer: 0
   pointA: {fileID: 1513251226}
   pointB: {fileID: 1010279118}
   distance: 0
@@ -4860,7 +4860,7 @@ MonoBehaviour:
   speed: 0
   player: {fileID: 1428754273}
   Sword_Arc: {fileID: 1079257575}
-  colliderPlayer: 1
+  colliderPlayer: 0
   pointA: {fileID: 1710431143}
   pointB: {fileID: 437325769}
   distance: 0
@@ -5051,7 +5051,7 @@ MonoBehaviour:
   speed: 0
   player: {fileID: 1428754273}
   Sword_Arc: {fileID: 1079257575}
-  colliderPlayer: 1
+  colliderPlayer: 0
   pointA: {fileID: 1784651406}
   pointB: {fileID: 1677391378}
   distance: 0
@@ -6071,7 +6071,7 @@ MonoBehaviour:
   speed: 0
   player: {fileID: 1428754273}
   Sword_Arc: {fileID: 1079257575}
-  colliderPlayer: 1
+  colliderPlayer: 0
   pointA: {fileID: 2070378701}
   pointB: {fileID: 999836296}
   distance: 0
@@ -6300,7 +6300,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _jumpForce: 555
   _speed: 200
-  _health: 3000
+  _health: 300
 --- !u!1 &2109510960
 GameObject:
   m_ObjectHideFlags: 0
