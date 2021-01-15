@@ -26,7 +26,7 @@ public class MsAllSunday : Enemy
         distance = Vector2.Distance(transform.position, player.position);
 
         // cho quai thuc day khi player nam trong khoang distanceMIN va ngu lai khi player ra khoi
-        if (player.transform.position.x > this.transform.position.x && distance <   )
+        if (player.transform.position.x > this.transform.position.x && distance < distanceMIN)
         {
             speed = 1f;
             anim.SetBool("Walk", true);

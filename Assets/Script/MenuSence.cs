@@ -1,12 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine;
 
 public class MenuSence : MonoBehaviour
 {
     public AudioClip audioClip;
-    private AudioSource audioSource;
+    public AudioSource audioSource;
     // Start is called before the first frame update
     public void StartGame()
     {

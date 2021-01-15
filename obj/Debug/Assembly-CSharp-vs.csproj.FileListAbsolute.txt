@@ -1,0 +1,2 @@
+D:\PTIT\Nam4\1\Game\NW\nw-champion\obj\Debug\Assembly-CSharp-vs.csprojAssemblyReference.cache
+D:\PTIT\Nam4\1\Game\NW\nw-champion\obj\Debug\Assembly-CSharp-vs.csproj.CoreCompileInputs.cache
